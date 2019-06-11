@@ -1,0 +1,27 @@
+<style>
+    body{background-color: cadetblue}
+    h1{text-align: center;margin-top: 100px;margin-bottom: 100px}
+    .box{display: table;margin-left: auto;margin-right: auto}
+    .again{text-align: center;margin-top: 50px;}
+</style>
+
+<h1>입력한 텍스트는 {{total}}로 구성되어있습니다</h1>
+
+<div class="box">
+        <div class="again">
+                <a href="{%url 'home' %}">다시하기</a>
+            </div>
+        <br>
+        <h2> 입력한 텍스트: </h2>
+        {{full}}
+        
+        <h2> 단어 카운트: </h2>
+        {% for word, howmany in dictionary%}
+        
+        {{word}} : {{howmany}}
+        <br>
+       
+        
+</div>
+
+{%endfor%}

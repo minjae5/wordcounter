@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <style>
+                    .back{background-color: aquamarine;display: table;margin-left: auto;margin-right: auto}
+                    body{background-color: azure}
+                    h1{text-align: center}
+                
+                </style>
+    </head>
+<body>
+    
+
+
+
+<div class="back">
+        <h1>Word Counter</h1>
+
+        <a href="{%url 'about'%}">About</a>
+<form action="{%url 'result'%}">
+    <textarea cols="48" rows="10" name="fulltext"></textarea>
+    <br>
+    <input type="submit" value="Count!">
+</form>
+</div>
+
+</body>
+
+</html>
